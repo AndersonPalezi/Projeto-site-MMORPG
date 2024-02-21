@@ -1,6 +1,6 @@
 Projeto MMORPG - README
 
-Este projeto consiste em um site dedicado a jogos online do gênero MMORPG (Massively Multiplayer Online Role-Playing Games). O site apresenta uma página inicial com um menu de navegação, uma barra de pesquisa e destaques dos jogos em destaque. Além disso, há uma seção dedicada aos "Clássicos dos anos 90", que apresenta uma lista de jogos icônicos desse período.
+Este projeto consiste em um site dedicado a jogos online do gênero MMORPG (Massively Multiplayer Online Role-Playing Games). O site apresenta uma página inicial com um menu de navegação, uma barra de pesquisa e destaques dos jogos em destaque. Além disso, há uma seção dedicada aos "Clássicos dos anos 90", que apresenta um slide de jogos icônicos desse período.
 
 Tecnologias Utilizadas:
 
