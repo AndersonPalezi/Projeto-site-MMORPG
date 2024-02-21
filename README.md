@@ -9,7 +9,7 @@ CSS3
 Estrutura do Projeto:
 
 index.html: Este arquivo contém a estrutura principal do site, incluindo o cabeçalho (header), seções de destaque e de jogos clássicos, e o rodapé (footer).
-styles/style.css: Este arquivo contém os estilos CSS aplicados ao site, incluindo formatação de texto, layout de elementos e animações.
+ Este arquivo contém os estilos CSS aplicados ao site, incluindo formatação de texto, layout de elementos e animações.
 Como Contribuir:
 
 Faça um fork deste repositório para sua própria conta do GitHub.
