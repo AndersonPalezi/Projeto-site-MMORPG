@@ -11,6 +11,8 @@ Estrutura do Projeto:
 index.html: Este arquivo contém a estrutura principal do site, incluindo o cabeçalho (header), seções de destaque e de jogos clássicos, e o rodapé (footer).
  Este arquivo contém os estilos CSS aplicados ao site, incluindo formatação de texto, layout de elementos e animações.
 Como Contribuir:
+CSS:defini variáveis de cores personalizadas que podem ser usadas em todo o seu estilo. 
+Dessa forma, você pode facilmente atualizar as cores em todo o seu site simplesmente alterando os valores das variáveis em um único lugar. Isso proporciona maior flexibilidade e facilidade de manutenção ao seu código CSS.
 
 Faça um fork deste repositório para sua própria conta do GitHub.
 Clone o repositório forkado para o seu ambiente local usando o comando git clone.
