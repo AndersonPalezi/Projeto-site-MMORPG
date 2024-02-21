@@ -1,0 +1,191 @@
+/* Definindo variáveis de cores */
+:root {
+  --cor-principal: #57b42c; /* Verde claro */
+  --cor-secundaria: #ff4500; /* Laranja */
+  --cor-texto: #ffffff; /* Branco */
+  --cor-fundo: #f5f5f5; /* Cinza claro */
+  --cor-texto-preto: #000000; /* Preto */
+  --cor-hover-jogos: rgba(0, 0, 0, 0.2); /* Transparência preta para hover */
+}
+
+/* Reset de estilos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Serif", serif; /* Define a fonte padrão */
+}
+
+body {
+  font-family: Arial, sans-serif; /* Define a fonte do corpo */
+  background-color: var(--cor-fundo); /* Usa a cor de fundo definida */
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 30px; /* Margem horizontal para o container */
+}
+
+header {
+  background-color: var(--cor-principal); /* Cor de fundo do cabeçalho */
+  color: var(--cor-texto); /* Cor do texto */
+  padding: 10px 0; /* Espaçamento interno */
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+  margin: 25px;
+  font-size: 40px; /* Tamanho do texto do título */
+}
+
+.logo {
+  float: left; /* Alinha o logo à esquerda */
+}
+
+.logo a {
+  color: var(--cor-texto); /* Cor do texto do logo */
+  text-decoration: none;
+  font-size: 1.5em; /* Tamanho do texto */
+}
+
+.slide__jogos, .jogo__on {
+  position: relative;
+  width: 280px;
+  height: 380px;
+  margin: auto;
+  overflow: hidden; /* Esconde o conteúdo que excede o tamanho */
+}
+
+.jogo__on {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0; /* Inicialmente invisível */
+  animation: slideShow 36s infinite; /* Animação definida abaixo */
+}
+
+.jogo__on img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px; /* Bordas arredondadas */
+}
+
+@keyframes slideShow {
+  0%, 100% { opacity: 0; }
+  5% { opacity: 1; }
+  25% { opacity: 1; }
+  30% { opacity: 0; }
+  /* Define como a opacidade da imagem muda durante a animação */
+}
+
+/* Animação com atrasos diferentes para cada imagem */
+.jogo__on:nth-child(1) { animation-delay: 1s; }
+.jogo__on:nth-child(2) { animation-delay: 5s; }
+.jogo__on:nth-child(3) { animation-delay: 9s; }
+.jogo__on:nth-child(4) { animation-delay: 15s; }
+.jogo__on:nth-child(5) { animation-delay: 18s; }
+.jogo__on:nth-child(6) { animation-delay: 22s; }
+.jogo__on:nth-child(7) { animation-delay: 27s; }
+.jogo__on:nth-child(8) { animation-delay: 31s; }
+
+/* Estilos de navegação */
+nav ul {
+  list-style: none; /* Remove marcadores de lista */
+}
+
+nav ul li {
+  display: inline; /* Exibe itens da lista na mesma linha */
+  margin-right: 20px; /* Espaçamento entre itens */
+}
+
+nav ul li a {
+  color: var(--cor-texto); /* Cor do link */
+  text-decoration: none; /* Remove sublinhado do link */
+}
+
+.search-bar {
+  float: right; /* Alinha a barra de pesquisa à direita */
+}
+
+.search-bar input[type="text"], .search-bar button {
+  padding: 8px;
+  border-radius: 5px; /* Bordas arredondadas */
+  border: none;
+}
+
+.search-bar button {
+  background-color: var(--cor-secundaria); /* Cor de fundo do botão */
+  color: var(--cor-texto); /* Cor do texto do botão */
+  cursor: pointer; /* Muda o cursor para indicar que é clicável */
+}
+
+/* Estilos para a seção de destaques */
+#destaques {
+  text-align: center; /* Centraliza o texto */
+}
+
+.jogo__online {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* Espaçamento entre os jogos */
+}
+
+.jogo {
+  text-align: center;
+  position: relative; /* Necessário para posicionamento do nome do jogo */
+}
+
+.nome-jogo {
+  position: absolute;
+  bottom: 95%;
+  left: 50%;
+  transform: translate(-50%, 50%); /* Centraliza o texto */
+  color: var(--cor-texto-preto); /* Cor do texto */
+  font-size: 20px;
+  font-weight: 500; /* Peso da fonte */
+}
+
+.jogos {
+  width: 280px;
+  height: 180px;
+  display: flex;
+  border-radius: 10px; /* Bordas arredondadas */
+  cursor: pointer; /* Indica que é clicável */
+  transition: transform 0.5s; /* Suaviza a transformação */
+}
+
+.jogos:hover {
+  transform: scale(1.2); /* Aumenta o tamanho ao passar o mouse */
+}
+
+/* Estilos para o rodapé */
+footer {
+  background-color: var(--cor-principal); /* Cor de fundo */
+  color: var(--cor-texto); /* Cor do texto */
+  padding: 20px 0; /* Espaçamento interno */
+  text-align: center; /* Centraliza o texto */
+}
+
+.footer-menu ul li {
+  display: inline; /* Itens na mesma linha */
+  margin-right: 20px; /* Espaçamento entre itens */
+}
+
+.footer-menu ul li a, .social-links a {
+  color: var(--cor-texto); /* Cor do texto dos links */
+  text-decoration: none; /* Remove sublinhado */
+}
+
+.social-links a:hover {
+  text-decoration: underline; /* Sublinha ao passar o mouse */
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  nav ul, .search-bar {
+    display: none; /*ocultar barra de pesquisa */
+  }}
