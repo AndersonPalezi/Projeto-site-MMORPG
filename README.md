@@ -23,4 +23,4 @@ Este projeto está licenciado sob a Licença MIT. Consulte o arquivo LICENSE.md 
 Autor:
 Anderson Palezi
 
-Para mais informações, entre em contato pelo e-mail: seu-email@example.com.
+Para mais informações, entre em contato pelo e-mail: andersonhagna@hotmail.com.
